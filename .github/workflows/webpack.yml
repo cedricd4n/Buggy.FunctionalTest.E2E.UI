@@ -8,53 +8,15 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v2
 
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v2
         with:
-          node-version: '20'
+          node-version: '14'
 
       - name: Install dependencies
-        run: npm ci
+        run: npm install
 
-      - name: Run Cypress tests and generate reports
-        run: |
-          mkdir -p cypress/reports
-          npx cypress run --reporter junit --reporter-options "mochaFile=cypress/reports/junit/test-results.[hash].xml"
-          npx cypress run --reporter html --reporter-options "baseUrl=https://example.com"
-
-      - name: Publish Test Results
-        uses: actions/upload-artifact@v3
-        with:
-          name: cypress-test-results
-          path: cypress/reports/junit
-
-      - name: Upload HTML Test Report
-        uses: actions/upload-artifact@v3
-        with:
-          name: cypress-test-report
-          path: cypress/reports/html
-
-      - name: Generate Summary Report
-        run: |
-          echo "# Cypress Test Summary" > summary.md
-          echo "" >> summary.md
-          echo "## Test Execution Summary" >> summary.md
-          echo "" >> summary.md
-          echo "### Total Tests" >> summary.md
-          echo "- Passed: ${{ job.results.summary.passed }}" >> summary.md
-          echo "- Failed: ${{ job.results.summary.failed }}" >> summary.md
-          echo "- Skipped: ${{ job.results.summary.skipped }}" >> summary.md
-          echo "" >> summary.md
-          echo "### Test Duration" >> summary.md
-          echo "- Total Time: ${{ job.duration }} seconds" >> summary.md
-          echo "" >> summary.md
-          echo "## Detailed Test Results" >> summary.md
-          echo "Y4:0 >> summary.md
-
-      - name: Upload Summary Report
-        uses: actions/upload-artifact@v3
-        with:
-          name: cypress-test-summary
-          path: summary.md
+      - name: Run Cypress tests
+        run: npx cypress run
