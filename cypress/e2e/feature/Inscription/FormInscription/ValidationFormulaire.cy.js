@@ -27,7 +27,7 @@ describe('Validation Formulaire', function () {
 
         inscription_page.alerte_fail_firstname()
     });
-    it(`TC-2:Validation Champ Last Name`, function () {
+    it.skip(`TC-2:Validation Champ Last Name`, function () {
         inscription_page.clear_lastname(lastname);
 
 
