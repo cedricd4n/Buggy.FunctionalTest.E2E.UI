@@ -8,15 +8,26 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4
 
       - name: Setup Node.js
-        uses: actions/setup-node@v2
+        uses: actions/setup-node@v4
         with:
-          node-version: '14'
+          node-version: '20'
 
       - name: Install dependencies
         run: npm install
 
-      - name: Run Cypress tests
-        run: npx cypress run
+      - name: Run Cypress tests and generate report
+        run: npx cypress run --reporter junit --reporter-options "mochaFile=reports/test-results.xml"
+
+      - name: Publish Test Results
+        uses: mikepenz/action-junit-report@v4
+        with:
+          report_paths: '**/reports/test-results.xml'
+
+      - name: Upload HTML Test Report
+        uses: actions/upload-artifact@v3
+        with:
+          name: cypress-test-report
+          path: cypress/reports/html
