@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="5.938" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2024-12-23T00:07:48" tests="0" file="cypress\e2e\feature\Inscription\InvalideInscriptionLogin.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Invalide Inscription Login" timestamp="2024-12-23T00:07:48" tests="1" time="5.915" failures="0">
+    <testcase name="Invalide Inscription Login TC_0:Failed Inscription  avec   un login contenant des espaces" time="5.858" classname="TC_0:Failed Inscription  avec   un login contenant des espaces">
+    </testcase>
+  </testsuite>
+</testsuites>

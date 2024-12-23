@@ -1,0 +1,31 @@
+
+{
+
+    "InscriptionPageLocator":{
+        "inscription_input_username":"#username",
+        "inscription_input_firstname":"#firstName",
+        "inscription_input_lastname":"#lastName",
+        "inscription_input_password":"#password",
+        "inscription_input_confirmpassword":"#confirmPassword",
+        "inscription_button":".btn-default",
+        "inscription_alerte_success":"Registration is successful",
+        "inscription_alerte_fail":".alert-danger",
+        "inscription_alerte_fail_number":6,
+        "inscription_alerte_fail_login_number":0,
+        "inscription_alerte_fail_firstname_number":2,
+        "inscription_alerte_fail_lastname_number":3,
+        "inscription_alerte_fail_password_number":4,
+        "inscription_alerte_fail_confirm_password_number":5,
+        "inscription_alerte_fail_login_message":"Login is required",
+        "inscription_alerte_fail_firstname_message":"First Name is required",
+        "inscription_alerte_fail_lastname_message":"Last Name is required",
+        "inscription_alerte_fail_password_message":"Password is required",
+        "inscription_alerte_fail_confirm_password_message":"Passwords do not match",
+        "inscription_message_fail_login":"Value at 'username' failed to satisfy constraint"
+        
+        
+    }
+    
+    
+    
+}

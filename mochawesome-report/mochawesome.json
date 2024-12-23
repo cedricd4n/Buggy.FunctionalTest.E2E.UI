@@ -1,0 +1,185 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 5,
+    "passes": 4,
+    "pending": 0,
+    "failures": 1,
+    "start": "2024-12-23T00:19:54.703Z",
+    "end": "2024-12-23T00:20:10.026Z",
+    "duration": 15323,
+    "testsRegistered": 5,
+    "passPercent": 80,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "d403f4e7-6db7-4338-bdb7-f621ad16b90a",
+      "title": "",
+      "fullFile": "cypress\\e2e\\feature\\Inscription\\FormInscription\\ValidationFormulaire.cy.js",
+      "file": "cypress\\e2e\\feature\\Inscription\\FormInscription\\ValidationFormulaire.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "eaa38f31-15c2-4c8c-a24a-8ced4db9591a",
+          "title": "Validation Formulaire",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "TC-0:Validation Champ Login",
+              "fullTitle": "Validation Formulaire TC-0:Validation Champ Login",
+              "timedOut": null,
+              "duration": 2900,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "inscription_page.clear_username(username);\ninscription_page.alerte_fail_login();",
+              "err": {},
+              "uuid": "47eebb88-5aa9-4dfe-8e08-b67617c561f2",
+              "parentUUID": "eaa38f31-15c2-4c8c-a24a-8ced4db9591a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC-1:Validation Champ First Name",
+              "fullTitle": "Validation Formulaire TC-1:Validation Champ First Name",
+              "timedOut": null,
+              "duration": 1879,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "inscription_page.clear_firstname(firstname);\ninscription_page.alerte_fail_firstname();",
+              "err": {},
+              "uuid": "3005dee1-6932-4f35-905e-0634943e5949",
+              "parentUUID": "eaa38f31-15c2-4c8c-a24a-8ced4db9591a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC-2:Validation Champ Last Name",
+              "fullTitle": "Validation Formulaire TC-2:Validation Champ Last Name",
+              "timedOut": null,
+              "duration": 2135,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "inscription_page.clear_lastname(lastname);\ninscription_page.alerte_fail_lastname();",
+              "err": {
+                "message": "AssertionError: expected '\\n                    First Name is required\\n                ' to include 'Last Name is required'",
+                "estack": "AssertionError: expected '\\n                    First Name is required\\n                ' to include 'Last Name is required'\n    at Context.eval (webpack:///./cypress/PageObjects/PageActions/InscriptionPageAction.js:120:28)",
+                "diff": null
+              },
+              "uuid": "5cbba5d9-54e0-4bba-bf97-027c99cb7617",
+              "parentUUID": "eaa38f31-15c2-4c8c-a24a-8ced4db9591a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC-3:Validation Champ Password",
+              "fullTitle": "Validation Formulaire TC-3:Validation Champ Password",
+              "timedOut": null,
+              "duration": 2623,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "inscription_page.clear_paswword(password);\ninscription_page.alerte_fail_password();",
+              "err": {},
+              "uuid": "d2621a0b-64d9-4895-bddd-b5562944f8b6",
+              "parentUUID": "eaa38f31-15c2-4c8c-a24a-8ced4db9591a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TC-4:Validation Champ Confirm Password",
+              "fullTitle": "Validation Formulaire TC-4:Validation Champ Confirm Password",
+              "timedOut": null,
+              "duration": 2063,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "inscription_page.clear_confirmpassword(password);\ninscription_page.alerte_fail_confirmpassword();",
+              "err": {},
+              "uuid": "8445e4ce-7d6e-4d86-857d-8453ceebb22a",
+              "parentUUID": "eaa38f31-15c2-4c8c-a24a-8ced4db9591a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "47eebb88-5aa9-4dfe-8e08-b67617c561f2",
+            "3005dee1-6932-4f35-905e-0634943e5949",
+            "d2621a0b-64d9-4895-bddd-b5562944f8b6",
+            "8445e4ce-7d6e-4d86-857d-8453ceebb22a"
+          ],
+          "failures": [
+            "5cbba5d9-54e0-4bba-bf97-027c99cb7617"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 11600,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "mochaFile": "cypress/reports/junit/test-results.[hash].xml",
+        "attachments": true,
+        "toConsole": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

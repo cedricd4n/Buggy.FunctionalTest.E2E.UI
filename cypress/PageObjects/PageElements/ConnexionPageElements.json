@@ -1,0 +1,15 @@
+
+{
+
+    "ConnexionPageLocator":{
+        "connexion_input_username":"input[name=login]",
+        "connexion_input_password":"input[name=password]",
+        "connexion_button":"Login",
+        
+        "connexion_message_fail":"Invalid username/password"
+    }
+    
+    
+    
+}
+

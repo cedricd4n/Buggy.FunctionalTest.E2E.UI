@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="5.479" tests="1" failures="0">
+  <testsuite name="Root Suite" timestamp="2024-12-23T00:08:41" tests="0" file="cypress\e2e\feature\Inscription\ValideInscription.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="valide Inscription " timestamp="2024-12-23T00:08:41" tests="1" time="5.468" failures="0">
+    <testcase name="valide Inscription  TC_0:Inscription réussi avec  des information valides" time="5.390" classname="TC_0:Inscription réussi avec  des information valides">
+    </testcase>
+  </testsuite>
+</testsuites>

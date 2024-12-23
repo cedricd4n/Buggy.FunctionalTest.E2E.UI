@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="22.010" tests="5" failures="0">
+  <testsuite name="Root Suite" timestamp="2024-12-23T00:08:07" tests="0" file="cypress\e2e\feature\Inscription\InvalideInscriptionPassword.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Invalide Inscription Password " timestamp="2024-12-23T00:08:07" tests="5" time="21.981" failures="0">
+    <testcase name="Invalide Inscription Password  TC_0:Failed Inscription  avec un password de minimum 4 caractère" time="5.248" classname="TC_0:Failed Inscription  avec un password de minimum 4 caractère">
+    </testcase>
+    <testcase name="Invalide Inscription Password  TC_1:Failed Inscription  avec un password contenant aucun symbole de caractère majuscule" time="3.814" classname="TC_1:Failed Inscription  avec un password contenant aucun symbole de caractère majuscule">
+    </testcase>
+    <testcase name="Invalide Inscription Password  TC_2:Failed Inscription  avec un password  contenant aucun  caractère majuscule" time="4.309" classname="TC_2:Failed Inscription  avec un password  contenant aucun  caractère majuscule">
+    </testcase>
+    <testcase name="Invalide Inscription Password  TC_3:Failed Inscription  avec un password contenant aucun symbole" time="3.815" classname="TC_3:Failed Inscription  avec un password contenant aucun symbole">
+    </testcase>
+    <testcase name="Invalide Inscription Password  TC_4:Failed Inscription  avec un password contenant aucun caractère minuscule" time="4.354" classname="TC_4:Failed Inscription  avec un password contenant aucun caractère minuscule">
+    </testcase>
+  </testsuite>
+</testsuites>

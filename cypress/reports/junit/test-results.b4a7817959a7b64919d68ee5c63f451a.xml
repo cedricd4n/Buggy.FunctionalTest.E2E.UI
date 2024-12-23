@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="10.855" tests="5" failures="1">
+  <testsuite name="Root Suite" timestamp="2024-12-23T00:09:02" tests="0" file="cypress\e2e\feature\Inscription\FormInscription\ValidationFormulaire.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Validation Formulaire" timestamp="2024-12-23T00:09:02" tests="5" time="10.845" failures="1">
+    <testcase name="Validation Formulaire TC-0:Validation Champ Login" time="1.978" classname="TC-0:Validation Champ Login">
+    </testcase>
+    <testcase name="Validation Formulaire TC-1:Validation Champ First Name" time="0.977" classname="TC-1:Validation Champ First Name">
+    </testcase>
+    <testcase name="Validation Formulaire TC-2:Validation Champ Last Name" time="1.923" classname="TC-2:Validation Champ Last Name">
+      <failure message="expected &apos;\n                    First Name is required\n                &apos; to include &apos;Last Name is required&apos;" type="AssertionError"><![CDATA[AssertionError: expected '\n                    First Name is required\n                ' to include 'Last Name is required'
+    at Context.eval (webpack:///./cypress/PageObjects/PageActions/InscriptionPageAction.js:120:28)]]></failure>
+    </testcase>
+    <testcase name="Validation Formulaire TC-3:Validation Champ Password" time="1.598" classname="TC-3:Validation Champ Password">
+    </testcase>
+    <testcase name="Validation Formulaire TC-4:Validation Champ Confirm Password" time="1.783" classname="TC-4:Validation Champ Confirm Password">
+    </testcase>
+  </testsuite>
+</testsuites>

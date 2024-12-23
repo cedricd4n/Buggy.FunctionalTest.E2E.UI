@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="50.297" tests="3" failures="0">
+  <testsuite name="Root Suite" timestamp="2024-12-23T00:06:01" tests="0" file="cypress\e2e\feature\VoteOnline\VoteFromMarque.cy.js" time="0.000" failures="0">
+  </testsuite>
+  <testsuite name="Voter un modèle à partir de la section marque" timestamp="2024-12-23T00:06:01" tests="3" time="50.271" failures="0">
+    <testcase name="Voter un modèle à partir de la section marque TC_0: vérifie le nombre de vote existant de la marque" time="4.522" classname="TC_0: vérifie le nombre de vote existant de la marque">
+    </testcase>
+    <testcase name="Voter un modèle à partir de la section marque TC_1: Séléction d&apos; un modèle de la marques" time="42.891" classname="TC_1: Séléction d&apos; un modèle de la marques">
+    </testcase>
+    <testcase name="Voter un modèle à partir de la section marque TC_2: vérifie le nombre de vote de la marque s&apos; inscremente " time="2.552" classname="TC_2: vérifie le nombre de vote de la marque s&apos; inscremente ">
+    </testcase>
+  </testsuite>
+</testsuites>
