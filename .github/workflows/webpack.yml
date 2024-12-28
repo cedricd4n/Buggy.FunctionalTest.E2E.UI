@@ -1,46 +1,22 @@
 name: Cypress Tests
 
-on:
-  push:
-    branches:
-      - main
+on: [push, pull_request]
 
 jobs:
-  test:
+  cypress-run:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout Code
-      uses: actions/checkout@v4
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
-    - name: Setup Node.js
-      uses: actions/setup-node@v4
-      with:
-        node-version: '20'
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '14'
 
-    - name: Install Dependencies
-      run: npm install
+      - name: Install dependencies
+        run: npm install
 
-    - name: Install Cypress
-      run: npx cypress install
-
-    - name: Run Cypress Tests
-      run: |
-        npx cypress run --reporter=json --reporter-options "outputFile=test-results.json" || true
-
-    - name: Résultats des tests
-      run: |
-        echo "::group::Résultats des tests"
-        PASSES=$(jq '.stats.passes' test-results.json)
-        FAILURES=$(jq '.stats.failures' test-results.json)
-        echo "Tests réussis : $PASSES"
-        echo "Tests échoués : $FAILURES"
-        echo "::endgroup::"
-
-    - name: Vérifier les échecs
-      run: |
-        FAILURES=$(jq '.stats.failures' test-results.json)
-        if [ $FAILURES -gt 0 ]; then
-          echo "::error::Tests échoués : $FAILURES"
-          exit 1
-        fi
+      - name: Run Cypress tests
+        run: npx cypress run
