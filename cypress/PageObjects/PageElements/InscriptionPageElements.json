@@ -21,7 +21,8 @@
         "inscription_alerte_fail_lastname_message":"Last Name is required",
         "inscription_alerte_fail_password_message":"Password is required",
         "inscription_alerte_fail_confirm_password_message":"Passwords do not match",
-        "inscription_message_fail_login":"Value at 'username' failed to satisfy constraint"
+        "inscription_message_fail_login":"Value at 'username' failed to satisfy constraint",
+        "inscription_message_fail_alreadylogin":"UsernameExistsException: User already exists"
         
         
     }

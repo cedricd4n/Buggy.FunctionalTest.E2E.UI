@@ -140,7 +140,14 @@ class inscriptionPageActions {
 
         return
     }
+    
+   
+    alerte_fail_alreadylogin() {
+        cy.contains(inscriptionPageLocators.InscriptionPageLocator.inscription_message_fail_alreadylogin).should('be.visible');
 
+
+        return
+    }
 }
 
 export default inscriptionPageActions
